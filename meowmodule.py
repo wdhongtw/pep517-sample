@@ -1,0 +1,2 @@
+def meow():
+    return 'meow'
