@@ -1,3 +1,19 @@
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "meow"
+version = "0.0.1"
+authors = [{ name = "Meow", email = "meow@meow.example.com" }]
+description = "a package that meows"
+keywords = []
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = []
+
+[project.urls]
+"Homepage" = "https://meow.example.com/"
+
+[project.scripts]
+"meow-cli" = "meow:main_meow"
